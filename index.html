@@ -1,92 +1,139 @@
- <!DOCTYPE html>
--<html>
-+<html lang="ja">
- <head>
-   <meta charset="UTF-8">
--  <title>LP Prototype</title>
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-+  <title>BIM LP Hero</title>
-+  <link rel="stylesheet" href="styles.css">
- </head>
- <body>
--  <h1>LP Prototype Ready</h1>
-+  <div class="background-grid" aria-hidden="true"></div>
-+  <main class="hero">
-+    <div class="hero-inner">
-+      <section class="hero-content">
-+        <p class="hero-kicker">BIM/CIMソリューション</p>
-+        <h1>高精度3Dスキャナ測量／現況図面作成やBIMモデル化をご支援</h1>
-+        <p class="hero-sub">測量から現況図面、BIMモデル化まで。現場課題に合わせてワンストップで伴走します。</p>
-+        <ul class="hero-points">
-+          <li>レーザー測量〜モデル化まで一貫対応</li>
-+          <li>既存図面が無い現場も整理して可視化</li>
-+          <li>活用シーンを見据えたモデル品質を確保</li>
-+        </ul>
-+        <div class="hero-cta">
-+          <button class="btn primary" data-modal-target="contact-tpr" data-button-type="contact">このサービスについて詳しく聞く</button>
-+          <button class="btn ghost" data-modal-target="download-tpr" data-button-type="download_pdf">資料をダウンロードする</button>
-+        </div>
-+      </section>
-+      <div class="hero-visual" aria-hidden="true">
-+        <svg viewBox="0 0 480 380" role="presentation" focusable="false">
-+          <defs>
-+            <linearGradient id="gridGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-+              <stop offset="0%" stop-color="#5ec1ff" stop-opacity="0.9" />
-+              <stop offset="100%" stop-color="#7de3c8" stop-opacity="0.8" />
-+            </linearGradient>
-+            <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
-+              <stop offset="0%" stop-color="#7de3c8" stop-opacity="0.9" />
-+              <stop offset="100%" stop-color="#7de3c8" stop-opacity="0" />
-+            </radialGradient>
-+          </defs>
-+          <rect x="30" y="30" width="420" height="320" rx="18" ry="18" fill="none" stroke="url(#gridGradient)" stroke-width="2" opacity="0.6" />
-+          <g stroke="url(#gridGradient)" stroke-width="1" opacity="0.35">
-+            <path d="M60 60 H420" />
-+            <path d="M60 120 H420" />
-+            <path d="M60 180 H420" />
-+            <path d="M60 240 H420" />
-+            <path d="M60 300 H420" />
-+            <path d="M90 60 V330" />
-+            <path d="M180 60 V330" />
-+            <path d="M270 60 V330" />
-+            <path d="M360 60 V330" />
-+          </g>
-+          <g fill="none" stroke="url(#gridGradient)" stroke-width="2">
-+            <path d="M120 280 L210 210 L300 250 L360 180" />
-+            <path d="M120 200 L190 140 L270 170 L330 110" opacity="0.7" />
-+            <path d="M150 320 L240 250 L340 280" opacity="0.5" />
-+          </g>
-+          <g fill="url(#nodeGlow)">
-+            <circle cx="120" cy="280" r="16" />
-+            <circle cx="210" cy="210" r="14" />
-+            <circle cx="300" cy="250" r="12" />
-+            <circle cx="360" cy="180" r="12" />
-+            <circle cx="190" cy="140" r="10" />
-+            <circle cx="270" cy="170" r="10" />
-+            <circle cx="330" cy="110" r="10" />
-+          </g>
-+          <g fill="#7de3c8" opacity="0.95">
-+            <circle cx="120" cy="280" r="6" />
-+            <circle cx="210" cy="210" r="6" />
-+            <circle cx="300" cy="250" r="5" />
-+            <circle cx="360" cy="180" r="5" />
-+            <circle cx="190" cy="140" r="4" />
-+            <circle cx="270" cy="170" r="4" />
-+            <circle cx="330" cy="110" r="4" />
-+          </g>
-+          <g fill="none" stroke="#7de3c8" stroke-width="1.5" opacity="0.65">
-+            <path d="M120 280 Q165 230 210 210" />
-+            <path d="M210 210 Q255 230 300 250" />
-+            <path d="M300 250 Q330 210 360 180" />
-+            <path d="M190 140 Q230 155 270 170" />
-+            <path d="M270 170 Q300 140 330 110" />
-+          </g>
-+        </svg>
-+      </div>
-+    </div>
-+  </main>
- </body>
- </html>
- 
-EOF
-)
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIM LP Hero</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <section class="hero-content">
+          <p class="hero-kicker">BIM/CIMソリューション</p>
+
+          <h1>
+            高精度3Dスキャナ測量<br />
+            現況図面作成やBIMモデル化をご支援
+          </h1>
+
+          <p class="hero-sub">
+            測量から現況図面、BIMモデル化まで。現場課題に合わせてワンストップで伴走します。
+          </p>
+
+          <ul class="hero-points">
+            <li>レーザー測量〜モデル化まで一貫対応</li>
+            <li>既存図面が無い現場も整理して可視化</li>
+            <li>活用シーンを見据えたモデル品質を確保</li>
+          </ul>
+
+          <div class="hero-cta">
+            <!-- 重要：data属性は温存（モーダル連携・計測の想定） -->
+            <button
+              class="btn primary"
+              type="button"
+              data-modal-target="contact-tpr"
+              data-button-type="contact"
+            >
+              このサービスについて詳しく聞く
+            </button>
+
+            <button
+              class="btn ghost"
+              type="button"
+              data-modal-target="download-tpr"
+              data-button-type="download_pdf"
+            >
+              資料をダウンロードする
+            </button>
+          </div>
+        </section>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 480 380" role="presentation" focusable="false">
+            <defs>
+              <linearGradient
+                id="gridGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#5ec1ff" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#7de3c8" stop-opacity="0.8" />
+              </linearGradient>
+              <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#7de3c8" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#7de3c8" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <rect
+              x="30"
+              y="30"
+              width="420"
+              height="320"
+              rx="18"
+              ry="18"
+              fill="none"
+              stroke="url(#gridGradient)"
+              stroke-width="2"
+              opacity="0.6"
+            />
+
+            <g stroke="url(#gridGradient)" stroke-width="1" opacity="0.35">
+              <path d="M60 60 H420" />
+              <path d="M60 120 H420" />
+              <path d="M60 180 H420" />
+              <path d="M60 240 H420" />
+              <path d="M60 300 H420" />
+              <path d="M90 60 V330" />
+              <path d="M180 60 V330" />
+              <path d="M270 60 V330" />
+              <path d="M360 60 V330" />
+            </g>
+
+            <g fill="none" stroke="url(#gridGradient)" stroke-width="2">
+              <path d="M120 280 L210 210 L300 250 L360 180" />
+              <path
+                d="M120 200 L190 140 L270 170 L330 110"
+                opacity="0.7"
+              />
+              <path d="M150 320 L240 250 L340 280" opacity="0.5" />
+            </g>
+
+            <g fill="url(#nodeGlow)">
+              <circle cx="120" cy="280" r="16" />
+              <circle cx="210" cy="210" r="14" />
+              <circle cx="300" cy="250" r="12" />
+              <circle cx="360" cy="180" r="12" />
+              <circle cx="190" cy="140" r="10" />
+              <circle cx="270" cy="170" r="10" />
+              <circle cx="330" cy="110" r="10" />
+            </g>
+
+            <g fill="#7de3c8" opacity="0.95">
+              <circle cx="120" cy="280" r="6" />
+              <circle cx="210" cy="210" r="6" />
+              <circle cx="300" cy="250" r="5" />
+              <circle cx="360" cy="180" r="5" />
+              <circle cx="190" cy="140" r="4" />
+              <circle cx="270" cy="170" r="4" />
+              <circle cx="330" cy="110" r="4" />
+            </g>
+
+            <g fill="none" stroke="#7de3c8" stroke-width="1.5" opacity="0.65">
+              <path d="M120 280 Q165 230 210 210" />
+              <path d="M210 210 Q255 230 300 250" />
+              <path d="M300 250 Q330 210 360 180" />
+              <path d="M190 140 Q230 155 270 170" />
+              <path d="M270 170 Q300 140 330 110" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
